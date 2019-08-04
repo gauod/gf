@@ -53,7 +53,7 @@
       
   - 実行の様子
     
-    - ![](https://github.com/gauod/gf/blob/master/gf.gif)
+    - 
     
     
   - 解析に使った画像(test.jpg)
