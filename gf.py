@@ -5,7 +5,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 
-class FFT2:
+class gf:
     def __init__(self):
         self.fig = plt.figure()
         
@@ -88,8 +88,8 @@ class FFT2:
             plt.imshow(numpy.real(fftpack.ifft2(waveImg)), cmap='gray')
             
                 
-            for xi in range(x-self.imageWidth//32, x+self.imageWidth//32):
-                for yi in range(y-self.imageWidth//32, y+self.imageWidth//32):
+            for xi in range(x-self.imageWidth//64, x+self.imageWidth//64):
+                for yi in range(y-self.imageWidth//64, y+self.imageWidth//64):
                     if xi>=self.imageWidth:
                         xx = xi-self.imageWidth
                     else:
@@ -116,5 +116,5 @@ class FFT2:
             self.fig.canvas.draw()
 
 if __name__ == '__main__':
-    FFT2()
+    gf()
 
